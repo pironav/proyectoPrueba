@@ -1,0 +1,285 @@
+/* CSS para carrito de compras  ++++++++++++++++++++++++++++++++++++++++ */
+#iconoCarrito{
+ align-self:center;  
+ border-radius: 50%;  
+ width: 45px; 
+ height: 45px;
+ margin-right: 20px;
+ background: #fff;
+ border: 3px solid #F5B041;
+ position: fixed; /* hacemos fijo el ico del carrito */
+ z-index:2;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-content: center;
+ align-items: center;
+ transition: width 0.5s, height 0.5s ,background 0.5s; 
+ 
+}
+#iconoCarrito:hover{
+ /* se hizo el borde muy grande para simular un bacground
+  ya que con el bacground quedaba blanco y no activa
+ cuando se vuelve activar el background, arrreglar luego*/
+ border: 24px solid #F5B041;   
+}
+
+
+#iconoCarrito #numero{
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+#iconoCarrito img {
+ width: 25px ;
+ height: 25px;
+ margin-bottom: 4px;
+ background:transparent;
+}
+
+
+
+
+#container{
+  /* ocultamos el carrito*/
+  
+ align-self:flex-start;
+ display: flex;
+ flex-direction: column;
+ justify-content:flex-start;
+ background: #FFF;
+ border: 1px solid  #EAEDED ;
+ height: 600px;
+ position: fixed; /* hacemos fijo el header */
+ z-index: 10;
+ max-height:500px; 
+ overflow-x:auto; 
+ overflow-y: auto;
+ 
+ width: 0px;/* hacemos a = para que la tabla no sea visible
+            y luego con js lo modificamos al hacer clip en boton;*/
+}
+
+#contenedorArchivos .carrito{
+    
+}
+
+.carrito {
+  margin-left: 5px;
+}
+.carrito #tapa{
+ display: flex;
+ justify-content:space-between;
+ align-items: center;
+ background:#F5B041;
+ color: #fff;
+ padding: 10px;
+}
+
+.carrito #tapa button{
+  background:transparent; 
+  border-radius: 0px;
+  border:0px;
+}
+
+.carrito #tapa button:hover   
+ {
+    background:#F5B041;
+    opacity:0.7;
+ }
+
+.carrito #tapa span {
+margin-left: 15px;
+}
+
+#tablaCarritoCompras{
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 13px;
+    text-align: center;    
+    border-collapse: collapse;  
+}
+
+
+#tablaCarritoCompras .cabezera {
+ background:#F1F1F1;
+ text-align: center;   
+}
+
+#tablaCarritoCompras .cabezera:nth-child(1){
+    width: 25px;
+}
+#tablaCarritoCompras .cabezera:nth-child(2){
+   width: 230px;  
+}
+#tablaCarritoCompras .cabezera:nth-child(3){
+   width: 55px;  
+ }
+#tablaCarritoCompras .cabezera:nth-child(4){
+   width: 60px;  
+}
+#tablaCarritoCompras .cabezera:nth-child(5){
+   width: 55px;  
+ 
+}
+#tablaCarritoCompras .cabezera:nth-child(6){
+   width: 55px;  
+;   
+}
+#tablaCarritoCompras .cabezera:nth-child(7){
+   width: 55px;  
+   
+}
+
+#tablaCarritoCompras .operador:hover{
+   background: #F1F1F1;
+   
+}
+
+#tablaCarritoCompras td {    
+    padding: 8px;     
+    background: #e8edff;     
+    border-bottom: 1px solid #fff;
+    color: #669;    
+    border-top: 1px solid transparent; }
+
+#tablaCarritoCompras tr:hover td { 
+    background: #d0dafd; 
+    color: #339; 
+   }
+   
+/* ocultamos el campo ID*/   
+#tablaCarritoCompras tr > *:nth-child(1) {
+    display: hiden;
+}
+
+   
+#tablaCarritoCompras button { 
+   background:transparent;
+   border-radius: 0px;
+   border:0px;
+   }
+
+
+#footerTabla {
+ background: #F1F1F1;  
+
+  
+}
+
+#footerTabla .totalCarrito {
+    
+ padding: 10px;
+ display: flex;
+ justify-content:flex-start;
+ align-items:center;
+ color:#777777;
+ 
+ }
+ 
+#footerTabla .abajo{
+     padding: 8px;
+ }
+ 
+ #footerTabla .abajo{
+     text-align: center;
+ }
+#footerTabla .abajo:nth-child(1){
+    width: 25px;
+}
+#footerTabla .abajo:nth-child(2){
+   width: 230px; 
+  
+}
+#footerTabla .abajo:nth-child(3){
+   width: 55px;  
+ }
+#footerTabla .abajo:nth-child(4){
+   width: 80px;  
+}
+#footerTabla .abajo:nth-child(5){
+   width: 55px;  
+ 
+}
+#footerTabla .abajo:nth-child(6){
+   width: 55px;  
+;   
+}
+#footerTabla .abajo:nth-child(7){
+   width: 55px;  
+   
+}
+
+#footerTabla button { 
+   background:transparent;
+   border-radius: 0px;
+   border:0px;
+   }
+
+#footerTabla .abajo:nth-child(7):hover   
+ {
+    background:#e8edff;
+    color: #FFF;
+    
+}   
+   
+#pisoTabla{
+ align-self: flex-end;
+ display:flex; 
+ padding: 10px; 
+ background:#FFF; 
+ justify-content: space-around;
+ 
+}
+
+#carroVacio {
+    
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+#pisoContainer{
+ align-self: center;  
+margin-bottom: 20px; 
+}
+
+#registrarCompra {
+   
+    
+    margin-bottom:30px;
+    display: flex;
+    background:#F1F1F1;
+    margin-top: 20px;
+    width: 260px;
+    height: 40px;
+   justify-content: center;
+   align-items: center;
+    
+}
+
+#registrarCompra #botonComprar {
+ display: flex;  
+justify-content:space-around;
+align-content: center;
+align-items: center;
+ background:#F1F1F1;
+ width: 100%;
+ height: 100%;
+ border: 0;
+ color:#669;
+
+}
+
+#registrarCompra #botonComprar:hover {
+    background:#F5B041;
+    color: #FFF;
+    
+}
+
+#pisoContainer{
+ 
+}
+
+/* fin css carrito de compras*/
+/* hasta aqui carrito compras ****************************************************************/
