@@ -1,0 +1,56 @@
+main {
+    display: grid;
+    font-family: sans-serif;
+    height: 100vh;
+    min-height: 620px;
+    grid-gap: 3px;
+    padding-top: 14vh;;;
+
+    /* Especificar posición de las areas */
+    grid-template-areas:
+       "izquierda"
+        "contenido"
+        "footer";
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 4fr 1fr;
+}
+
+main > * {
+    background-color: goldenrod;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Nombrar las areas */
+
+aside{
+    grid-area: izquierda;
+}
+
+article {
+    grid-area: contenido;
+}
+
+
+
+footer {
+    grid-area: footer;
+}
+
+/* Responsive */
+@media (min-width: 750px) {
+    main {
+         padding-top: 14vh;;;
+    }
+    
+    main {
+        grid-template-areas:
+            "izquierda contenido contenido"
+            "footer footer footer";
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 4fr 1fr;
+    }
+}

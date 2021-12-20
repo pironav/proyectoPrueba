@@ -1,0 +1,217 @@
+@import url(carritoCompras.css); /* CSS PARA EL CARRITO DE COMPRAS*/ 
+ main {
+           padding-top: 13vh; /*  siempre casi el mismo alto de lo que se le haya puesto al header */
+                              /* debido a que el header es fijo y los elementos que estan en la parte de arriba del main */
+                              /* no queden ocultos*/
+       
+      /* background:moccasin;   */                    
+       }
+        
+        .container {
+        /*  background:yellow; */
+        }   
+               
+         .aside {
+            background:#e5e7e9;
+            height: 9vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .aside #usuario{
+             margin-left:calc(50vh);
+             margin-right: 15px;
+        }
+          
+        
+        .aside .selector {
+            
+            border-radius:2em;
+            width: 320px;
+            height: 70%;
+            background: #FFFFFF;
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            outline: 0; 
+  	    border: 0;
+             font-family: 
+	'Quicksand', sans-serif;
+           font-size: 1em;
+            color:#787675; 
+           
+           
+        }
+        
+        .aside .selector span {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+        }
+        
+        
+        .aside .selector form select {
+            width: 80%;
+            background: #FFFFFF;
+             outline: 0; 
+  	     border: 0;
+             margin-left: 15px;
+             font-family: 
+	'Quicksand', sans-serif;
+           font-size: 1em;
+            color:#787675;  
+           
+             
+             
+
+            
+        }
+        
+        .aside .selector form {
+           /* background: blue;*/
+            min-width: 150px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .aside .selector form button {
+            width: 60px;
+            background:#0074d9;
+            border-bottom-right-radius:2em;
+            border-top-right-radius:2em;
+            margin-left: 18px;
+            outline: 0; 
+  	    border: 0;
+        }
+        
+        
+        
+         #categoriaNombre {
+            margin-top: 3px;
+             margin-bottom: 3px;
+            padding-bottom: 3px;
+            padding-top: 3px;
+          /* background:#e5e7e9;*/
+           height: 8vh;
+           min-height: 60px;
+           display: flex;
+           justify-content: center;
+            align-items: center;
+           font-size: 1.3em;
+           color:#787675;
+ }
+        
+        .categorias {
+            background:#fff;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+           
+            margin-bottom: 3px;
+            border-style: solid;
+            border-width: 1px 0px 1px 0px;
+            border-color:#b3b3b3;           
+            
+        }
+         .categorias .contenedorTiendas{
+           margin: 10px;  
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           align-content: center;
+           text-align: center;
+           width: 85px;
+           height: 85px;
+           font-family: 
+	'Quicksand', sans-serif;
+          
+          color: #566573 ;  
+           font-size: 0.8em;
+        }
+        
+        .categorias div img{
+            width: 60px;
+        }
+        
+        article {
+           background:#e5e7e9;
+            margin-top: 10px;
+            min-height: 50vh;
+            display: flex;
+           flex-direction: column;
+            justify-content: flex-start;
+            align-items: stretch;
+           
+        }
+       
+        article #publicidad {
+            height: 50%;
+          
+            background:#fff;
+            display: flex;
+            justify-content: center;
+            align-items:stretch;
+            
+           
+        }
+        
+         article #publicidad img {
+             max-width: 350px;
+           
+        }
+        
+         article #baner {
+           
+            background:#b3b3b3;
+            
+        }
+        
+       
+        
+        article #baner .anuncio {
+            
+           display: flex;
+           justify-content: space-around;
+           align-items: center;
+            
+        }
+        
+        article #baner .anunciantes {
+            
+           display: flex;
+           justify-content: center;
+           align-items: center;
+          
+           flex-wrap: wrap;
+            
+        }
+        
+        article #baner .anunciantes div{
+            margin: 4px;
+          background: #fff;  
+          width: 110px;
+          height: 80px;
+            
+        }
+        
+         article #baner .anunciantes div img{
+          width: 100%;
+          height: 100%;
+            
+        }
+        
+        
+ 
+        
+ /****************************************************************************/       
+        
+        
+        
+        
+        @media screen and (max-width: 750px) {
+	    main {
+           
+       
+       }
+	}
